@@ -1,4 +1,7 @@
 import random
+
+#testing
+
 #create a tuple of clues 
 clues = (
     "Here's a clue: it's less than 5 but greater than 0!", 
