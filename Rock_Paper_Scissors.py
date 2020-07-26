@@ -7,6 +7,9 @@ guess = (
     'scissors'
 )
 
+def winner_winner(): 
+    
+
 def play_again(): 
     again = input("Do you want to play again? Y/N: ")
     again = again.lower()
@@ -15,15 +18,14 @@ def play_again():
 
 def first_game():
     print("Let's play rock, paper, scissors!!")
-    ready = input("Enter your choice: ")
-    ready = ready.lower()
-    if ready == "rock" or ready == "paper" or ready == "scissors": 
-        print("Ok, now my turn.")
-        time.sleep(1)
-        print("rolling ... ")
-        time.sleep(1)
-        print("I rolled", random.choices(guess))
-        play_again
+    user_choice = input("Enter your choice: ")
+    user_choice = user_choice.lower()
+    print("Ok, now my turn.")
+    print("rolling ... ")
+    time.sleep(1)
+    ai_choice = random.choices(guess)
+    print("I rolled", ai_choice)
+    play_again
 
 
 
